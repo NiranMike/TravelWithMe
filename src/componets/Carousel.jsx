@@ -29,16 +29,13 @@ const Carousel = () => {
     const [slide, setSlide] = useState(0);
     const numData = Object.keys(sliderData).length
 
-    console.log(numData);
-
     const prevSlide = () => {
         setSlide(slide === 0 ? numData - 1 : slide - 1);
 
     }
     const nextSlide = () => {
 
-        setSlide(slide === numData - 1 ? slide - (numData - 1) : slide + 1 )
-        console.log(slide);
+        setSlide(slide === numData - 1 ? slide - (numData - 1) : slide + 1 );
         console.log('numData is' + sliderData.lenght);
     }
 
@@ -55,7 +52,7 @@ const Carousel = () => {
             )
         })}
     </div>
-  )
+  );
 }
 
 export default Carousel;
