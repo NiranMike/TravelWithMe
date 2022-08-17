@@ -44,13 +44,13 @@ const Carousel = () => {
 
   return (
     
-    <div className='max-w-[1240px] justify-center flex items-center mx-auto px-4 py-16 relative '>
-        <BsArrowLeftSquareFill onClick={prevSlide} className='absolute top-[50%] text-3xl text-white left-8 cursor-pointer' />
-        <BsArrowRightSquareFill onClick={nextSlide} className='absolute top-[50%] text-3xl text-[#fefefe] right-8 cursor-pointer' />
+    <div className=' max-w-[150vh]  justify-center flex items-center mx-auto px-4 py-16 relative '>
+        {<BsArrowLeftSquareFill onClick={prevSlide} className={slide === 0 ? 'hidden':'absolute text-3xl text-[#000000] left-8 md:left-[100px] cursor-pointer'} />}
+        <BsArrowRightSquareFill onClick={nextSlide} className={slide === numData - 1 ? 'hidden' : 'absolute  text-3xl text-[#000000] right-8 md:right-[100px] cursor-pointer'} />
         {sliderData.map((data, index)=>{
             return(
                     <div className={index === slide ? 'block' : 'hidden'}>
-                        {index === slide && (<img className='w-full rounded-md' src={data.url} alt="/" />)}
+                        {index === slide && (<img className='w-full h-full object-contain rounded-md' src={data.url} alt="/" />)}
                     </div>
             )
         })}

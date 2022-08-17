@@ -11,4 +11,4 @@ const SelectCard = ({bg, text}) => {
   )
 }
 
-export default SelectCard
+export default SelectCard;
