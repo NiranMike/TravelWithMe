@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="w-full bg-[#5aacef62] py-16">
       <div className="max-w-[1240px] mx-auto flex flex-col px-4">
         <div className="sm:flex text-center items-center justify-between">
-          <h1>Travel Africa</h1>
+          <h1 className="text-[#fff]">Travel Africa</h1>
           <div className="flex justify-between w-full sm:max-w-[280px] my-3">
             <FaFacebook className="icon" />
             <FaInstagram className="icon" />
