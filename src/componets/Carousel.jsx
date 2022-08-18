@@ -36,8 +36,9 @@ const Carousel = () => {
     const nextSlide = () => {
 
         setSlide(slide === numData - 1 ? slide - (numData - 1) : slide + 1 );
-        console.log('numData is' + sliderData.lenght);
     }
+
+    const { url:keys } = sliderData;
 
   return (
     
@@ -46,10 +47,10 @@ const Carousel = () => {
         <BsArrowRightSquareFill onClick={nextSlide} className={slide === numData - 1 ? 'hidden' : 'absolute  text-3xl text-[#ffffff] right-8 md:right-[100px] cursor-pointer'} />
         {sliderData.map((data, index)=>{
             return(
-                    <div className={index === slide ? 'block' : 'hidden'}>
-                        {index === slide && (<img className='w-full h-full object-contain rounded-md' src={data.url} alt="/" />)}
+                    <div key={keys} className={index === slide ? ' opacity-100 ease-in-out duration-300' : ' ease-in-out duration-300 opacity-0'}>
+                        {index === slide && (<img className='w-full h-full  rounded-md' src={data.url} alt="/" />)}
                     </div>
-            )
+            );
         })}
     </div>
   );

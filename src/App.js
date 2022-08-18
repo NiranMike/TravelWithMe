@@ -4,6 +4,7 @@ import Destination from "./componets/Destination";
 import Search from "./componets/Search";
 import Selection from "./componets/Selection";
 import Carousel from "./componets/Carousel";
+import Footer from "./componets/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Search />
         <Selection />
         <Carousel />
+        <Footer />
     </div>
   );
 }

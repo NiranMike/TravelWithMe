@@ -75,11 +75,11 @@ const Search = () => {
           </div>
           <div className="flex flex-col my-4">
             <label>Sign-In</label>
-            <input className="border rounded-md p-2" type="date" />
+            <input className="border  rounded-md p-2" type="date" />
           </div>
 
           <div className="flex flex-col my-2">
-            <label>Sign-Out</label>
+            <label className="">Sign-Out</label>
             <input className="border rounded-md p-2" type="date" />
           </div>
           <button className="w-full">Payment & Availability</button>
