@@ -52,7 +52,7 @@ const Search = () => {
         <div className="border center text-center">
           <p className="pt-2">GET AN ADDITIONAL 10% OFF</p>
           <p className="py-4">12 HOURS LEFT</p>
-          <p className="bg-[#0ed422] text-black py-2">BOOK NOW AND SAVE</p>
+          <button className="w-full text-[#fff] py-2">BOOK NOW AND SAVE</button>
         </div>
         <form className="w-full">
           <div className="flex flex-col my-2">

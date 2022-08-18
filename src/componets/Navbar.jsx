@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom"
 import { BsPerson } from "react-icons/bs";
 import { BiSearch } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -25,11 +26,11 @@ const Navbar = () => {
         </h1>
       </div>
       <ul className="hidden md:flex">
-        <li>Home</li>
-        <li>Contact Us</li>
-        <li>About</li>
-        <li>View</li>
-        <li>Blog</li>
+         <li>Home</li>
+         <li>Contact Us</li>
+         <li>About</li>
+         <li>View</li>
+         <li>Blog</li>
       </ul>
       <ul className="hidden md:flex md:justify-around">
         <li><BiSearch /></li>
