@@ -26,21 +26,21 @@ const Navbar = () => {
       </div>
       <ul className="hidden md:flex">
         <li>Home</li>
-        <li>Destination</li>
-        <li>Travel</li>
+        <li>Contact Us</li>
+        <li>About</li>
         <li>View</li>
-        <li>Book</li>
+        <li>Blog</li>
       </ul>
-      <div className="hidden md:flex">
-        <BiSearch />
-        <BsPerson />
-      </div>
+      <ul className="hidden md:flex md:justify-around">
+        <li><BiSearch /></li>
+        <li><BsPerson /></li>
+      </ul>
       {/* Hamburger menu */}
       <div onClick={menuHandler} className="md:hidden z-10">
         {!menu ? (
-          <HiMenuAlt4 size={30} className="" />
+          <HiMenuAlt4 size={30} className="cursor-pointer" />
         ) : (
-          <AiOutlineClose size={30} className="md:hidden text-black" />
+          <AiOutlineClose size={30} className="md:hidden cursor-pointer text-black" />
         )}
       </div>
       {/* Mobile dropdown menu */}
@@ -55,10 +55,10 @@ const Navbar = () => {
         <ul>
           <h1>Voyage Africa</h1>
           <li className="border-b">Home</li>
-          <li className="border-b">Destination</li>
-          <li className="border-b">Travel</li>
+          <li className="border-b">Contact Us</li>
+          <li className="border-b">About</li>
           <li className="border-b">View</li>
-          <li className="border-b">Book</li>
+          <li className="border-b">Blog</li>
           <div className="flex flex-col ">
             <button className="my-4">Search</button>
             <button>Account</button>

@@ -1,5 +1,5 @@
 import React from "react";
-import beachVid from "../Assets/t1.mp4";
+import beachVid from "../Assets/vid1.mp4";
 import { AiOutlineSearch } from "react-icons/ai";
 
 const Hero = () => {
@@ -12,7 +12,7 @@ const Hero = () => {
         muted
         className="w-full h-full object-cover"
       />
-      <div className="absolute w-full h-full top-0 left-0 bg-[#00000053]"></div>
+      <div className="absolute w-full h-full top-0 left-0 bg-[#00000038]"></div>
       <div className="absolute top-0 h-full w-full flex flex-col text-center text-white p-4 justify-center">
         <h1>First Class Travel</h1>
         <h2 className="py-4">Top Locations in Africa</h2>
